@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02_dom</title>
+    <script>
+      window.onload = function () {
+        let $button = document.getElementById('btn');
+        let $food = document.getElementsByName('food');
+        // $food는 input값이 담겨있음 -> .value로 필요한 값을 추출해야 함.
+
+        // 클릭 시 이벤트 발생
+        $button.addEventListener('click', () => {
+          let temp = []; // value값을 저장할 배열 생성
+          // 배열 길이 만큼 반복
+          for (let i = 0; i < $food.length; i++) {
+            // 체크 시 배열에 값 추가
+            if ($food[i].checked) {
+              temp.push($food[i].value);
+            }
+          }
+          // 띄어쓰기로 저장된 값 출력
+          console.log(temp.join(' '));
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>02_dom</h1>
+    <form>
+      <div>
+        좋아하는 음식은?
+        <label><input type="checkbox" name="food" value="라면" /> 라면</label>
+        <label><input type="checkbox" name="food" value="만두" /> 만두</label>
+        <label
+          ><input type="checkbox" name="food" value="불고기" /> 불고기</label
+        >
+        <input id="btn" type="button" value="전송" />
+      </div>
+    </form>
+  </body>
+</html>

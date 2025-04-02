@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01_dom</title>
+    <script>
+      window.onload = function () {
+        let $name = document.getElementById('name');
+        let $btn = document.getElementById('btn');
+
+        // 클릭시 저장된 value를 출력
+        btn.addEventListener('click', () => {
+          let name = $name.value;
+          console.log(name);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <h1>01_dom</h1>
+    <form>
+      <label for="name">이름:</label>
+      <input id="name" name="name" type="text" size="30" />
+      <input id="btn" type="button" value="전송" />
+    </form>
+  </body>
+</html>

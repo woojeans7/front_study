@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>join</title>
+  </head>
+  <body>
+    <!-- 영역 생성 -->
+    <form>
+      <!-- 필드 감싸기 -->
+      <fieldset>
+        <legend>회원가입</legend>
+        <!-- 내용작성을 위한 표 만들기 -->
+        <table>
+          <tr>
+            <td><label for="username">사용자 ID</label></td>
+            <td><input id="username" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="password">비밀번호</label></td>
+            <td><input id="password" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="pw_check">비밀번호 확인</label></td>
+            <td><input id="pw_check" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="name">이름</label></td>
+            <td><input id="name" type="text" /></td>
+          </tr>
+          <!-- 선택지 영역 -->
+          <tr>
+            <!-- 성별은 유일선택으로 radio 설정 -->
+            <td>성별</td>
+            <td>
+              <input id="man" type="radio" name="gender" value="m" />
+              <label for="man">남</label>
+              <input id="woman" type="radio" name="gender" value="w" />
+              <label for="woman">여</label>
+            </td>
+          </tr>
+          <tr>
+            <!-- 취미는 중복가능 체크박스 -->
+            <td>취미</td>
+            <td>
+              <input id="soccer" type="checkbox" name="hobby" value="sc" />
+              <label for="soccer">축구</label>
+              <input id="baseball" type="checkbox" name="hobby" value="bs" />
+              <label for="baseball">야구</label>
+              <input id="volleyball" type="checkbox" name="hobby" value="vl" />
+              <label for="volleyball">배구</label>
+              <input id="basketball" type="checkbox" name="hobby" value="bk" />
+              <label for="basketball">농구</label>
+            </td>
+          </tr>
+          <!-- 이메일 행 추가 -->
+          <tr>
+            <td><label for="email">email</label></td>
+            <td><input id="email" type="text" /></td>
+          </tr>
+          <tr>
+            <!-- 역할 select/option을 사용해서 선택 -->
+            <td><label for="role">역할</label></td>
+            <td>
+              <select name="role" id="role">
+                <option>ADMIN</option>
+                <option>관리자</option>
+                <option>일반회원</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <!-- table 하단에 제출과 초기화 작성 -->
+        <input type="submit" value="확인" />
+        <input type="reset" value="다시쓰기" />
+      </fieldset>
+    </form>
+    <!-- --영역 끝-- -->
+  </body>
+</html>

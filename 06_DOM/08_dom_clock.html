@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clock</title>
+    <script>
+      window.onload = function () {
+        let $header = document.getElementById('clock');
+        // 1초마다 시간 갱신
+        setInterval(function () {
+          time = new Date(); // 시간을 불러옴
+          $header.innerHTML = time.toString(); // 시간을 h1으로 출력
+        }, 1000);
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="clock"></h1>
+  </body>
+</html>

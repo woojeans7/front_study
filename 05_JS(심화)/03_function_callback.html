@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03_function_callback</title>
+    <script>
+      function CallTen(callback) {
+        for (let i = 0; i < 10; i++) {
+          callback();
+        }
+      }
+      let fun = function () {
+        alert('함수 호출');
+      };
+
+      CallTen(fun());
+    </script>
+  </head>
+  <body>
+    <h1>03_function_callback</h1>
+  </body>
+</html>

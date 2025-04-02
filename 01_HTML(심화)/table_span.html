@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table_span</title>
+  </head>
+  <body>
+    <h1>table_span</h1>
+    <table border="1">
+      <thead>
+        <!-- 2개의 열의 너비로 head에 제목 셀 생성 -->
+        <th colspan="2">지역별홍차</th>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- 3개의 행 높이로 제목 셀 생성 -->
+          <th rowspan="3">중국</th>
+          <!-- 일반 셀 추가 -->
+          <td>정산소종</td>
+        </tr>
+        <tr>
+          <td>기문</td>
+        </tr>
+        <tr>
+          <td>운남</td>
+        </tr>
+        <tr>
+          <!-- 4개의 행 높이로 제목 셀 생성 -->
+          <th rowspan="4">인도 및 스리랑카</th>
+          <td>아삼</td>
+        </tr>
+        <tr>
+          <td>실론</td>
+        </tr>
+        <tr>
+          <td>다질링</td>
+        </tr>
+        <tr>
+          <td>닐기리</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

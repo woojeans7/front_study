@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Basic</title>
+    <script>
+      window.onload = function () {
+        /* forEach를 이용한 방법*/
+        let divs = '';
+        const $body = document.body;
+        //  div를 256개 생성
+        for (let i = 0; i < 256; i++) {
+          divs += '<div></div>';
+        }
+        // div를 html 문서에 넣기
+        $body.innerHTML = divs;
+
+        const div = document.querySelectorAll('div');
+        div.forEach((el, i) => {
+          el.style.height = '2px';
+          el.style.background = `rgb(${i},${i},${i})`;
+        });
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

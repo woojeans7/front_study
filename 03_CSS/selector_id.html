@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector_id</title>
+    <style>
+      #header {
+        width: 800px;
+        margin: 0 auto;
+        background-color: red;
+        overflow: hidden;
+      }
+      #wrap {
+        width: 800px;
+        /* 위 아래는 0, 양쪽은 자동으로 */
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      #aside {
+        margin: 0;
+        width: 200px;
+        float: left;
+        background-color: blue;
+      }
+      #content {
+        width: 600px;
+        float: right;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>#header 태그</h1>
+    </div>
+    <div id="wrap">
+      <div id="aside">
+        <h2>#aside 태그</h2>
+      </div>
+      <div id="content">
+        <h2>#content 태그</h2>
+      </div>
+    </div>
+  </body>
+</html>

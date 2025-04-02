@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04_absolutePosition_align</title>
+    <style>
+      body {
+        background-color: red;
+        /* 너비를 안줘서 마진도 굳이 필요없음 */
+        /* relative 줘도 반영이 되지 않음 -> 왜? 그냥 안될수도 있음 px로 변환해서 적용하도록(받아들여) */
+      }
+      #container {
+        border: 1px solid black;
+        position: absolute;
+        background-color: orange;
+        width: 500px;
+        height: 250px;
+        left: 50%;
+        top: 50%;
+        margin-left: -250px;
+        margin-top: -125px;
+        /* text-align: center; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>요소의 중앙 배치</h1>
+    </div>
+  </body>
+</html>
