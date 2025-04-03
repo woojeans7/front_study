@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-06</title>
+  </head>
+  <body>
+    <div id="app">
+      x : <input type="text" v-model.number="x" /><br />
+      y : <input type="text" v-model.number="y" /><br />
+      덧셈 결과 : {{sum}}
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript">
+      const { createApp } = Vue;
+
+      let vm = createApp({
+        name: 'App',
+        data() {
+          return { x: 0, y: 0, sum: 0 };
+        },
+        watch: {
+          x(current, old) {
+            console.log(`## x : ${old} --> ${current}`);
+            let result = Number(current) + Number(this.y);
+            if (isNaN(result)) this.sum = 0;
+            else this.sum = result;
+          },
+        },
+      });
+      vm.mount('#app');
+    </script>
+  </body>
+</html>
