@@ -1,5 +1,5 @@
-function hello(name) {
-  return name + '님, 안녕하세요?';
-}
+const hello = (name) => {
+  console.log(`${name}님, 안녕하세요?`);
+};
 
-hello('어피치');
+module.exports = hello;

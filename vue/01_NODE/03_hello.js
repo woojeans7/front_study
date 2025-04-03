@@ -1,5 +1,5 @@
 // 매개변수에 기본값을 설정한 경우
-function hello(name = '이름없음') {
+function hello(name = '홍길동') {
   //   if (!name) {
   //     return '이름을 입력해주세요.';
   //   } else {
