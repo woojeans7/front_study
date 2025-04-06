@@ -1,0 +1,59 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR:wght@200..900&display=swap');
+
+:root {
+  --blue-dark: #1e6f9f;
+  --blue: #4ea8de;
+  --purple-dark: #5e60ce;
+  --purple: #8284fa;
+  --gray700: #0d0d0d;
+  --gray600: #1a1a1a;
+  --gray500: #262626;
+  --gray400: #333333;
+  --gray300: #808080;
+  --gray200: #d9d9d9;
+  --gray100: #f2f2f2;
+  --danger: #e25858;
+  --space-s: 6px;
+  --space-m: 16px;
+  --space-l: 32px;
+}
+
+body {
+  background-color: var(--gray600);
+  color: var(--gray100);
+  font-family: 'Noto Serif KR', serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: var(--gray300);
+  cursor: pointer;
+  border-radius: var(--space-s);
+  padding: var(--space-s) var(--space-m);
+  color: var(--gray100);
+}
+button.active {
+  background-color: var(--blue-dark);
+}
+button:hover {
+  background-color: var(--blue);
+}
+
+#app > *:not(.hd) {
+  max-width: 500px;
+  width: calc(100% - var(--space-l));
+  margin: auto;
+}

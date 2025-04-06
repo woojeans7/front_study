@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": "1672531200000",
+      "text": "Vue.js 3 입문자를 위한 가이드",
+      "completed": true,
+      "createdAt": "1672531200000"
+    },
+    {
+      "id": "1675209600000",
+      "text": "Composition API 학습하기",
+      "completed": true,
+      "createdAt": "1675209600000"
+    },
+    {
+      "id": "1680307200000",
+      "text": "Vue Router로 SPA 구현하기",
+      "completed": false,
+      "createdAt": "1680307200000"
+    },
+    {
+      "id": "1682899200000",
+      "text": "Todo 애플리케이션 완성하기",
+      "completed": false,
+      "createdAt": "1682899200000"
+    }
+  ]
+}
