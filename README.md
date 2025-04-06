@@ -33,8 +33,8 @@ KB IT's Your Life 수업에서 푼 문제들 모음
 | 07 컴포넌트 심화         |   07_vue    |  ✅  |  ✅  |
 | 08 Composition API       |   08_vue    |  ✅  |  ✅  |
 | 09 라우팅                |   09_vue    |  ✅  |  ✅  |
-| 10 Axios                 |   10_vue    |  ✅  |  🆇  |
-| 11 라우트와 Axios 연동   |   11_vue    |  🆇  |  🆇  |
-| 12 Pinia 상태 관리       |   12_vue    |  🆇  |  🆇  |
+| 10 Axios                 |   10_vue    |  ✅  |  ✅  |
+| 11 라우트와 Axios 연동   |   11_vue    |  ✅  |  ✅  |
+| 12 Pinia 상태 관리       |   12_vue    |  ✅  |  ✅  |
 
 +p.s. Vue 파일에서 node_modules 크기가 커서 폴더 지우고 올림. 
